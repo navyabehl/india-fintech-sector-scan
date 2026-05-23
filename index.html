@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>India Fintech Sector Scan 2025 | Strategy & Transformation CoE</title>
+  <link rel="stylesheet" href="src/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-meta">Strategy &amp; Transformation CoE &mdash; Sector Scan</div>
+      <h1 class="header-title">India Fintech: Market Landscape 2025</h1>
+      <div class="header-sub">
+        Sources: KPMG, Inc42, Tracxn, RBI, PwC, Mordor Intelligence &nbsp;·&nbsp; May 2025
+        <span class="badge-confidential">Confidential</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="tab-nav" id="tabNav" aria-label="Report sections">
+    <button class="tab-btn active" data-tab="overview">Market overview</button>
+    <button class="tab-btn" data-tab="segments">Segment breakdown</button>
+    <button class="tab-btn" data-tab="funding">Funding &amp; M&amp;A</button>
+    <button class="tab-btn" data-tab="players">Key players</button>
+    <button class="tab-btn" data-tab="themes">Disruption themes</button>
+    <button class="tab-btn" data-tab="strategy">Strategic implications</button>
+  </nav>
+
+  <main class="content-area">
+
+    <!-- ── TAB 1: OVERVIEW ── -->
+    <section id="tab-overview" class="tab-section active">
+      <div class="metrics-grid">
+        <div class="metric-card"><div class="m-label">Market size 2025</div><div class="m-val">$156B</div><div class="m-sub">est. (Mordor Intelligence)</div></div>
+        <div class="metric-card"><div class="m-label">Projected 2030</div><div class="m-val">$250B</div><div class="m-sub">revenue potential</div></div>
+        <div class="metric-card"><div class="m-label">CAGR 2025–32</div><div class="m-val">30.3%</div><div class="m-sub">fastest-growing globally</div></div>
+        <div class="metric-card"><div class="m-label">UPI monthly txns</div><div class="m-val">13B+</div><div class="m-sub">75% of payment volumes</div></div>
+        <div class="metric-card"><div class="m-label">Fintech unicorns</div><div class="m-val">26+</div><div class="m-sub">3 new created in 2025</div></div>
+        <div class="metric-card"><div class="m-label">Adoption rate</div><div class="m-val">87%</div><div class="m-sub">vs 64% global average</div></div>
+      </div>
+
+      <div class="section-label">Market size trajectory ($B) — 2021 to 2032</div>
+      <div class="chart-container" style="height:280px;">
+        <canvas id="mktChart" role="img" aria-label="India fintech market size growing from $31B in 2021 to projected $990B by 2032">
+          Market size: 2021 $31B, 2022 $50B, 2023 $70B, 2024 $111B, 2025 $156B, 2027 $260B, 2029 $540B, 2032 $990B.
+        </canvas>
+      </div>
+
+      <div class="section-label" style="margin-top:2rem;">Structural growth drivers</div>
+      <div class="driver-grid">
+        <div class="driver-card">
+          <div class="driver-icon">🏛️</div>
+          <div class="driver-title">India Stack DPI</div>
+          <div class="driver-body">Aadhaar (1.3B IDs), UPI, OCEN, Account Aggregator — the world's most advanced digital public infrastructure rails enable zero-friction onboarding at national scale</div>
+        </div>
+        <div class="driver-card">
+          <div class="driver-icon">👥</div>
+          <div class="driver-title">Demographic dividend</div>
+          <div class="driver-body">886M internet users, 1B+ smartphones (2024), 33% rising middle class — massive digitally-native consumer base with growing financial aspirations</div>
+        </div>
+        <div class="driver-card">
+          <div class="driver-icon">⚖️</div>
+          <div class="driver-title">Regulatory tailwinds</div>
+          <div class="driver-body">RBI sandbox framework, Unified Lending Interface (ULI), BBPS expansion — proactive regulation balancing innovation with systemic stability</div>
+        </div>
+        <div class="driver-card">
+          <div class="driver-icon">🌐</div>
+          <div class="driver-title">Underbanked TAM</div>
+          <div class="driver-body">RBI FI Index at 67 (FY25) — 190M+ adults still underbanked; Tier 2/3 greenfield opportunity in credit, insurance, and wealth products</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TAB 2: SEGMENTS ── -->
+    <section id="tab-segments" class="tab-section">
+      <div class="section-label">2025 market share &amp; segment CAGR (2026–31)</div>
+      <div class="segment-table" id="segBars"></div>
+
+      <div class="section-label" style="margin-top:2rem;">Revenue size comparison: 2025 vs 2030 ($B)</div>
+      <div class="chart-container" style="height:320px;">
+        <canvas id="segChart" role="img" aria-label="Grouped bar chart comparing fintech segment revenues in 2025 and projected 2030">
+          Digital Lending: 2025 $63B, 2030 $133B. Payments: 2025 $67B, 2030 $50B revenue (high vol, low margin). WealthTech: 2025 $8B, 2030 $28B. InsurTech: 2025 $10B, 2030 $20B. Neobanking: 2025 $8B, 2030 $19B.
+        </canvas>
+      </div>
+
+      <div class="section-label" style="margin-top:2rem;">Segment investor sentiment shift (deal share %)</div>
+      <div class="chart-container" style="height:260px;">
+        <canvas id="dealChart" role="img" aria-label="Stacked bar chart showing shift in fintech deal share from 2015-2020 to 2021-2025">
+          2015-2020: Payments 32%, Lending 24%, Banking 16%, InsurTech 12%, WealthTech 10%, Other 6%. 2021-2025: Lending 36%, WealthTech 18%, Payments 20%, Neobanking 12%, RegTech 8%, Other 6%.
+        </canvas>
+      </div>
+    </section>
+
+    <!-- ── TAB 3: FUNDING ── -->
+    <section id="tab-funding" class="tab-section">
+      <div class="metrics-grid">
+        <div class="metric-card"><div class="m-label">2025 total funding</div><div class="m-val">$2.4B</div><div class="m-sub">Ranked 3rd globally (Tracxn)</div></div>
+        <div class="metric-card"><div class="m-label">Early-stage surge</div><div class="m-val">+78%</div><div class="m-sub">YoY H1 2025</div></div>
+        <div class="metric-card"><div class="m-label">Largest round 2025</div><div class="m-val">$251M</div><div class="m-sub">Zolve (NRI fintech)</div></div>
+        <div class="metric-card"><div class="m-label">2025 acquisitions</div><div class="m-val">22</div><div class="m-sub">largest: Groww–Fisdom $150M</div></div>
+        <div class="metric-card"><div class="m-label">2025 IPOs</div><div class="m-val">4</div><div class="m-sub">Pine Labs, Groww, FinanceBuddha, Seshaasai</div></div>
+        <div class="metric-card"><div class="m-label">New unicorns 2025</div><div class="m-val">3</div><div class="m-sub">+50% over 2024</div></div>
+      </div>
+
+      <div class="section-label">Annual funding trend ($B) — 2019 to 2025</div>
+      <div class="chart-container" style="height:260px;">
+        <canvas id="fundChart" role="img" aria-label="Line chart of annual fintech funding in India from 2019 to 2025, peaking at $7.8B in 2021">
+          Funding: 2019 $1.4B, 2020 $2.0B, 2021 $7.8B peak, 2022 $5.6B, 2023 $2.0B, 2024 $2.3B, 2025 $2.4B.
+        </canvas>
+      </div>
+
+      <div class="section-label" style="margin-top:2rem;">Notable M&amp;A &amp; funding rounds 2024–25</div>
+      <div class="deals-table">
+        <div class="deal-header">
+          <span>Deal</span><span>Type</span><span>Value</span><span>Strategic rationale</span>
+        </div>
+        <div class="deal-row">
+          <span class="deal-name">Groww acquires Fisdom</span>
+          <span><span class="tag tag-acq">Acquisition</span></span>
+          <span class="deal-val">$150M</span>
+          <span class="deal-rationale">Wealth management consolidation; strengthens mutual fund + advisory stack ahead of IPO</span>
+        </div>
+        <div class="deal-row">
+          <span class="deal-name">Zolve raises Series B</span>
+          <span><span class="tag tag-fund">Funding</span></span>
+          <span class="deal-val">$251M</span>
+          <span class="deal-rationale">NRI financial services; signals growing investor appetite in cross-border credit access</span>
+        </div>
+        <div class="deal-row">
+          <span class="deal-name">Groww Series F</span>
+          <span><span class="tag tag-fund">Funding</span></span>
+          <span class="deal-val">$202M</span>
+          <span class="deal-rationale">Pre-IPO round; 12M+ active investors, ₹1,800Cr profit in FY25</span>
+        </div>
+        <div class="deal-row">
+          <span class="deal-name">Slice + NESFB merger</span>
+          <span><span class="tag tag-merge">Merger</span></span>
+          <span class="deal-val">—</span>
+          <span class="deal-rationale">Neobank → licensed bank; enables BNPL player to access cheaper deposit funding</span>
+        </div>
+        <div class="deal-row">
+          <span class="deal-name">MUFG invests in DMI Finance</span>
+          <span><span class="tag tag-fund">Funding</span></span>
+          <span class="deal-val">$338M</span>
+          <span class="deal-rationale">Japanese bank backing digital shadow bank; validates India lending as global investment thesis</span>
+        </div>
+        <div class="deal-row">
+          <span class="deal-name">InCred Money acquires Stocko</span>
+          <span><span class="tag tag-acq">Acquisition</span></span>
+          <span class="deal-val">$35M</span>
+          <span class="deal-rationale">Lending-to-wealth cross-sell; Stocko's retail investor base expands InCred product surface</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TAB 4: KEY PLAYERS ── -->
+    <section id="tab-players" class="tab-section">
+      <div class="section-label">Competitive landscape by segment</div>
+      <div class="players-grid" id="playersGrid"></div>
+    </section>
+
+    <!-- ── TAB 5: DISRUPTION THEMES ── -->
+    <section id="tab-themes" class="tab-section">
+      <div class="section-label">High-conviction disruption themes — 2025 to 2030</div>
+      <div class="themes-list" id="themesList"></div>
+    </section>
+
+    <!-- ── TAB 6: STRATEGIC IMPLICATIONS ── -->
+    <section id="tab-strategy" class="tab-section">
+      <div class="section-label">Key strategic questions for incumbents &amp; challengers</div>
+      <div class="strat-grid" id="stratGrid"></div>
+
+      <div class="section-label" style="margin-top:2rem;">Risk landscape</div>
+      <div class="risk-matrix" id="riskMatrix"></div>
+
+      <div class="exec-summary">
+        <div class="exec-label">Executive summary</div>
+        <p>India's fintech sector is transitioning from a growth-at-all-costs phase to a <strong>quality-and-profitability</strong> phase. Funding has normalised post-2021 peak, but early-stage activity surged 78% in H1 2025, indicating a new cohort of infrastructure and AI-native players entering. Lending tech has firmly displaced payments as the highest-conviction segment — capturing 36% of all deals and projected to generate $133B in revenue by 2030. The next battleground is <strong>embedded finance and AI-driven credit</strong>, where the convergence of Account Aggregator data rails, LLM-based underwriting, and UPI-linked repayment creates a structurally different credit model. Incumbents (banks, NBFCs) face a build-vs-partner dilemma as fintechs increasingly hold banking licences. Regulatory risk — particularly RBI's evolving stance on digital lending norms and UPI market cap — remains the single biggest variable.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div>India Fintech Sector Scan · Prepared by Navya Behl · May 2025</div>
+    <div>Data sourced from public disclosures: KPMG India Fintech Report 2025, Inc42 H1 2025 Fintech Report, Tracxn Geo Annual 2025, RBI Annual Report FY25, PwC India Payments Handbook 2025–30, Mordor Intelligence</div>
+  </footer>
+
+  <script src="src/data.js"></script>
+  <script src="src/charts.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>
