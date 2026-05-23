@@ -118,4 +118,4 @@ Or connect your GitHub repo at [vercel.com/new](https://vercel.com/new) — auto
 M.Sc. Economics, Dr. B.R. Ambedkar School of Economics, Bengaluru (2021–2026)  
 [LinkedIn](https://linkedin.com) · [GitHub](https://github.com)
 
-*This project was independently produced as part of a portfolio demonstrating consulting-oriented sector analysis skills. It is not affiliated with Bain & Company.*
+*This project was independently produced as part of a portfolio demonstrating consulting-oriented sector analysis skills.*
