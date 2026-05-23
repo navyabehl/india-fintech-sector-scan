@@ -9,7 +9,7 @@
 
 A consulting-grade, interactive sector scan of India's fintech industry — structured to mirror the deliverables produced by Bain's Strategy & Transformation Centre of Excellence. Covers market sizing, segment dynamics, funding trends, competitive landscape, disruption themes, and strategic implications.
 
-> **Live demo:** [india-fintech-sector-scan.vercel.app](https://india-fintech-sector-scan.vercel.app) *(deploy instructions below)*
+> **Live demo:** [navyabehl.github.io/india-fintech-sector-scan](https://navyabehl.github.io/india-fintech-sector-scan)
 
 ---
 
@@ -83,16 +83,6 @@ npx serve .
 
 ---
 
-## Deploying to Vercel (free, 30 seconds)
-
-```bash
-npm i -g vercel
-vercel --prod
-```
-
-Or connect your GitHub repo at [vercel.com/new](https://vercel.com/new) — auto-deploys on every push.
-
----
 
 ## Deploying to GitHub Pages
 
